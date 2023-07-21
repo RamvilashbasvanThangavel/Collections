@@ -7,7 +7,12 @@ public class Basics01 {
 		int num2 = 0;
 		System.out.println(num1);
 		System.out.println(num2);
+		try {
 		System.out.println(num1 / num2);
+		}
+		catch(Exception ae) {
+			System.out.println("Ae - error");
+		}
 		System.out.println("Thak You");
 	}
 

@@ -1,4 +1,4 @@
-package java8FunctionalInterface01;
+package java8FunctionalInterfaceWithLambda;
 
 import java.util.*;
 

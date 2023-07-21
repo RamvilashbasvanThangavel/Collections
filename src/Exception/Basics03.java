@@ -2,7 +2,7 @@ package Exception;
 
 public class Basics03 {
 	public static void main(String[] args) {
-		String a = args[0];        //TN24AH1994
+		String a = args[0]; // TN24AH1994
 		try {
 			int num = Integer.parseInt(a);
 			System.out.println(num);

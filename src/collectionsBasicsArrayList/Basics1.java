@@ -17,11 +17,11 @@ public class Basics1 {
 		// System.out.println(nums.size()); // size() method length of the Array list
 		// length of the Array.
 		// nums.remove(2); // remove() method of the Array list.
-	//	System.out.println(nums.get(1)); // get method() to take the values to print.
-		
-		for(int i = 0;i<nums.size();i++) {
+		// System.out.println(nums.get(1)); // get method() to take the values to print.
+
+		for (int i = 0; i < nums.size(); i++) {
 			System.out.println(nums.get(i));
-		
+
 		}
 	}
 

@@ -1,4 +1,4 @@
-package java8Functionalinterface;
+ package java8Functionalinterface;
 
 public class UseSample {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package java8Functionalinterface;
+package java8FunctionalinterfaceMethods;
 
 import java.util.function.Consumer;
 import java.util.function.Predicate;

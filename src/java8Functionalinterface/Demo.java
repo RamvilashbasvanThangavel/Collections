@@ -1,7 +1,8 @@
 package java8Functionalinterface;
 
 public interface Demo {
-
+	
+	
 	public static String print() {
 		return "Welcome";
 	}

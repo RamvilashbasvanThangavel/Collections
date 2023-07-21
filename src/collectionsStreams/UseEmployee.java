@@ -24,6 +24,16 @@ public class UseEmployee {
 		emp.add(e3);
 		emp.add(e4);
 		emp.add(e5);
+		
+		String da =  emp.stream().filter(x->x.getGender().equals("Male"))
+				.map(x->x.getName()).sorted(Comparator.reverseOrder()).findFirst().get();
+		System.out.println(da);
+		
+		// SecondHighestSalary
+				int sHS = emp.stream().map(x -> x.getSalary()).distinct().sorted(Comparator.reverseOrder()).skip(1).findFirst()
+						.get();
+				// System.out.println(sHS);
+
 
 		// filter -
 		List<Employee> filter = emp.stream().filter((x) -> x.getGender().equals("Female")).collect(Collectors.toList());
@@ -56,7 +66,7 @@ public class UseEmployee {
 		// sortdes1.forEach(x->System.out.println(x));
 
 		// Limit
-		List<Employee> limit = emp.stream().limit(2).collect(Collectors.toList());
+		List<Employee> limit = emp.stream().limit(3).collect(Collectors.toList());
 		// limit.forEach((x) -> System.out.println(x));
 
 		// AnyMatch
@@ -74,11 +84,6 @@ public class UseEmployee {
 		// SummmingInt
 		int summingint = emp.stream().collect(Collectors.summingInt(Employee::getSalary));
 		// System.out.println(summingint);
-
-		// SecondHighestSalary
-		int sHS = emp.stream().map(x -> x.getSalary()).distinct().sorted(Comparator.reverseOrder()).skip(1).findFirst()
-				.get();
-		// System.out.println(sHS);
 
 		// toMap()
 		Map<Integer, Employee> toMap = emp.stream().collect(Collectors.toMap((x) -> x.getId(), y -> y));
