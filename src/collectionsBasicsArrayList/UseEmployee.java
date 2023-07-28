@@ -34,7 +34,7 @@ public class UseEmployee {
 		// System.out.println(da);
 
 		List<Employee> em = emp.stream().filter(x -> x.getsalary() < 20000)
-				.sorted(Comparator.comparing(Employee::getsalary).reversed()).toList();
+				.sorted(Comparator.comparing(Employee::getage)).toList();
 		em.forEach(x -> System.out.println(x));
 
 //		ArrayList<Employee> female = new ArrayList<>();

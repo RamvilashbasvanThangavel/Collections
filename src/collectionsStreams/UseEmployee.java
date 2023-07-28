@@ -27,7 +27,7 @@ public class UseEmployee {
 		
 		String da =  emp.stream().filter(x->x.getGender().equals("Male"))
 				.map(x->x.getName()).sorted(Comparator.reverseOrder()).findFirst().get();
-		System.out.println(da);
+		//System.out.println(da);
 		
 		// SecondHighestSalary
 				int sHS = emp.stream().map(x -> x.getSalary()).distinct().sorted(Comparator.reverseOrder()).skip(1).findFirst()
@@ -49,7 +49,7 @@ public class UseEmployee {
 
 		// Distinct
 		List<String> distinct = emp.stream().map(x -> (x.getName())).distinct().collect(Collectors.toList());
-		// System.out.println(distinct);
+		 System.out.println(distinct);
 
 		// Sort
 		List<Integer> sort1 = emp.stream().map((x) -> x.getSalary()).sorted().collect(Collectors.toList());
